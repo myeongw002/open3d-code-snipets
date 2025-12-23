@@ -116,7 +116,7 @@ Open3D를 활용한 포인트 클라우드(Point Cloud) 처리 및 시각화를 
   - 쿼터니언 기반 회전 조정으로 짐벌락(gimbal lock) 방지
   - 평행이동(translation): q/a (X축), w/s (Y축), e/d (Z축)
   - 회전(rotation): r/f (roll), t/g (pitch), y/h (yaw)
-  - Z축(거리) 기반 Turbo 컬러맵 시각화
+  - Z축(거리) 기반 TURBO 컬러맵 시각화
   - 실시간 투영 결과 확인 및 파라미터 출력
   - 숫자키 기능: 1(도움말), 2(리셋), 3(이동 스텝 변경), 4(회전 스텝 변경), 5(저장 후 종료), 6(종료)
   - SPACE로 재렌더링
