@@ -109,6 +109,20 @@ Open3D를 활용한 포인트 클라우드(Point Cloud) 처리 및 시각화를 
 
 ### 카메라-LiDAR 캘리브레이션 및 투영
 
+#### `hand_calibration.py`
+- **기능**: 카메라-LiDAR 외부 파라미터(extrinsic)를 대화형으로 수동 조정하는 캘리브레이션 도구
+- **특징**:
+  - 키보드를 사용한 실시간 extrinsic 파라미터 조정
+  - 쿼터니언 기반 회전 조정으로 짐벌락(gimbal lock) 방지
+  - 평행이동(translation): q/a (X축), w/s (Y축), e/d (Z축)
+  - 회전(rotation): r/f (roll), t/g (pitch), y/h (yaw)
+  - X, Y, Z축 기반 컬러맵 시각화 지원
+  - 실시간 투영 결과 확인 및 파라미터 출력
+  - Ctrl+S로 조정된 extrinsic 저장
+  - 조정 스텝 크기 변경 가능 (+/- 키)
+  - 초기값으로 리셋 기능 (0 키)
+- **사용 예시**: 카메라-LiDAR 캘리브레이션의 미세 조정 및 검증
+
 #### `projection3.py`
 - **기능**: LiDAR 포인트 클라우드를 카메라 이미지에 투영
 - **특징**:
